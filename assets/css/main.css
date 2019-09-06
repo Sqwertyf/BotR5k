@@ -2807,7 +2807,7 @@ input, select, textarea {
 			@media screen and (max-width: 980px) {
 
 				.wrapper > .inner {
-					width: 100%;
+					width: 90%;
 				}
 
 			}
@@ -2819,6 +2819,7 @@ input, select, textarea {
 		.wrapper.style1 {
 			background-color: #21b2a6;
 			color: #c8ece9;
+			padding: 3em 0 2em 0;
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
@@ -3317,6 +3318,10 @@ input, select, textarea {
 			}
 
 		}
+		.wrapper.style6 {
+			background-color: #21b2a6;
+			padding: 2em 0 1em 0;
+		}
 
 /* Page Wrapper + Menu */
 
@@ -3787,6 +3792,7 @@ input, select, textarea {
 			#cta .inner {
 				display: block;
 				text-align: center;
+				background-color: #47639E;
 			}
 
 				#cta .inner header {
@@ -3806,6 +3812,68 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#cta .inner .actions {
+				max-width: none;
+			}
+
+		}
+
+/* Donate */
+
+	#donate .inner {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		max-width: 45em;
+		background-color: #21b2a6;
+	}
+
+		#donate .inner header {
+			-moz-order: 1;
+			-webkit-order: 1;
+			-ms-order: 1;
+			order: 1;
+			margin: 0 auto;
+			width: 100%;
+		}
+
+			#donate .inner header h2 {
+				text-align: center;
+			}
+
+		/* #cta .inner .actions {
+			-moz-order: 2;
+			-webkit-order: 2;
+			-ms-order: 2;
+			order: 2;
+			width: 30%;
+		} */
+
+		@media screen and (max-width: 980px) {
+
+			#donate .inner {
+				display: block;
+				text-align: center;
+				background-color: #21b2a6;
+			}
+
+				#donate .inner header {
+					padding-right: 0;
+					width: 100%;
+				}
+
+				/* #cta .inner .actions {
+					margin-left: auto;
+					margin-right: auto;
+					max-width: 20em;
+					width: 100%;
+				} */
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#donate .inner .actions {
 				max-width: none;
 			}
 
@@ -3984,12 +4052,16 @@ input, select, textarea {
 		background: none;
 	}
 
-	body.is-mobile.landing #banner,
-	body.is-mobile.landing .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+body.is-mobile.landing #banner{
+        background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+	body.is-mobile.landing .wrapper.style4 {
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
