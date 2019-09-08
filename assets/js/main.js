@@ -49,6 +49,8 @@
 				speed: 1500,
 				offset: $header.outerHeight()
 			});
+	
+	// Slick.
 
 	// Menu.
 		$('#menu')
